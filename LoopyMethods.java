@@ -122,39 +122,63 @@
      */
     public static void sumN(int n)
     {
-        // your code goes here
+        int sum = 0;
+        for (int i=1; i<= n; i++)
+        {
+            sum = sum + i;
+        }
+        System.out.println(sum);
     }
     
     public static void tenMultsOfTen()
     {
-        // your code goes here
+        for (int i=10; i<=100; i+=10)
+        {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
     
     public static void sumNEven(int n)
     {
-        // your code goes here
+        int sum = 2;
+        for (int i=2 ; i<= n; i++)
+        {
+            sum = sum + i;
+        }
+        System.out.println(sum);
     }
+    
     
     public static void countMtoN(int m, int n)
     {
-        // your code goes here
+        for (int i=m; i<=n; i=i+1) 
+        {
+            System.out.print(i + " ");
+	}
+	System.out.println();
     }
+    
+    
     
     public static void iLoveJava()
     {
-        // your code goes here
+        for (int i=0; i<10; i++)
+	System.out.println("I love java.");
     }
+    
     
     public static void divBy4and5()
     {
         for (int i=1; i<=200; i++)
-        {
+            {
             if (i%4==0 && i%5==0)
             {
                 System.out.println(i + " ");
             }
         }
     }
+    
     
     // keep making methods here
     public static int factorial(int n)
@@ -169,13 +193,14 @@
         return prod;
     }
     
+    
     public static int factorial2(int n)
-    {
+        {
         if (n<=1)
             return 1;
         else
             return n * factorial2(n - 1);
-    }
+        }
     
     public static long fibonacci(int n)
     {
