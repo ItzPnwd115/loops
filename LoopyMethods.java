@@ -155,8 +155,8 @@
         for (int i=m; i<=n; i=i+1) 
         {
             System.out.print(i + " ");
-	}
-	System.out.println();
+    }
+    System.out.println();
     }
     
     
@@ -164,9 +164,8 @@
     public static void iLoveJava()
     {
         for (int i=0; i<10; i++)
-	System.out.println("I love java.");
+    System.out.println("I love java.");
     }
-    
     
     public static void divBy4and5()
     {
@@ -179,8 +178,31 @@
         }
     }
     
+    public static void divBy3and7()
+    {
+        for (int i=1; i<=100; i++)
+        {
+            if (i%3==0 && i%7==0)
+            {
+                System.out.println(i + " ");
+            }
+        }
+    }
     
-    // keep making methods here
+    public static in tenMonkeys()
+    {
+        for (int i=10 ; i>=1 ; i--)
+        {
+            if(i = 1)
+            {
+                System.out.println(i + " Little monkeys jumping on a bed one jumped up and bumped his head.Mom called the Doctor and the Doctor said.....""no more monkeys jumping on a bed.");
+            }
+            else{
+                System.out.println(i + " Little monkey jumping on a bed one jumped up and bumped his head.Mom called the Doctor and the Doctor said.....""no more monkeys jumping on a bed.");
+            }
+        }
+    }
+    
     public static int factorial(int n)
     {
         int prod = 1;
