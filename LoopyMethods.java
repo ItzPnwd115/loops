@@ -189,16 +189,16 @@
         }
     }
     
-    public static in tenMonkeys()
+    public static void tenMonkeys()
     {
         for (int i=10 ; i>=1 ; i--)
         {
-            if(i = 1)
+            if(i > 1)
             {
-                System.out.println(i + " Little monkeys jumping on a bed one jumped up and bumped his head.Mom called the Doctor and the Doctor said.....""no more monkeys jumping on a bed.");
+                System.out.println(i + " Little monkeys jumping on a bed one jumped up and bumped his head.Mom called the Doctor and the Doctor said...../no more monkeys jumping on a bed./");
             }
             else{
-                System.out.println(i + " Little monkey jumping on a bed one jumped up and bumped his head.Mom called the Doctor and the Doctor said.....""no more monkeys jumping on a bed.");
+                System.out.println(i + " Little monkey jumping on a bed one jumped up and bumped his head.Mom called the Doctor and the Doctor said...../no more monkeys jumping on a bed./");
             }
         }
     }

@@ -29,14 +29,14 @@
  *                       (you'll need to use an if statement.)
  *
  * 10) divBy5or7Sum    - uses a while loop to find the sum of all values in the
- *     		         set {1, 2, 3, ... , 10000} that are divisible by 5 or 7.
+ *                   set {1, 2, 3, ... , 10000} that are divisible by 5 or 7.
  *
  * 11) bizzBuzz        - uses a while loop to count from 1 to n by ones. However,
  *                       if a number is divisible by 3, the word "bizz" should be 
- *   	 		 printed, and if the number is divisible by 5, "buzz" should
- * 			 be printed. Sample output:
+ *               printed, and if the number is divisible by 5, "buzz" should
+ *           be printed. Sample output:
  *
- *			 1, 2, Bizz, 4, Buzz, Bizz, 7, 8, Bizz, Buzz, 11, Bizz, 13, 14, 
+ *           1, 2, Bizz, 4, Buzz, Bizz, 7, 8, Bizz, Buzz, 11, Bizz, 13, 14, 
  *                       Bizz Buzz, 16, 17, Bizz, 19, Buzz, Bizz, 22, 23, Bizz, ...
  *
  *
@@ -48,25 +48,104 @@
  
  public class MixedLoopPractice
  {
- 	public static void oneToThirtyF()
- 	{
- 		
- 	}
- 	
- 	public static void oneToThirtyW()
- 	{
- 		
- 	}
- 	    
-	// keep making methods here
+     public static void oneToThirtyF()
+    {
+        for (int i=1; i<=30; i=i+1) 
+        {
+            System.out.print(i + " ");
+	}
+	System.out.println();
+    }
     
+    public static void oneToThirtyW()
+    {
+        int i = 1;
+        while (i <= 30)
+        {
+            System.out.print(i + " ");
+            i++;
+        }
+        System.out.println();
+    }
     
- 	public static void main(String[] args)
- 	{
- 		oneToThirtyF();
- 		oneToThirtyW();
- 		
- 		// test your methods here
- 	}
+    public static void twentyToZeroF()
+    {
+        for (int i = 20; i>=0; i=i-1)
+        {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+    
+    public static void twentyToZeroW()
+    {
+        int i = 20;
+        
+        while (i >= 0)
+        {
+            System.out.print(i + " ");
+            i--;
+        }
+        System.out.println();
+    }
+    
+    public static void sumN(int n)
+    {
+        int sum = 0;
+        while( i <= n)
+        {
+            System.out.println(sum
+        }
+    }
+    
+    public static void countMtoN()
+    {
+        while
+    }
+    
+    public static void iLoveJava(int n)
+    {
+        int i = 1;
+        while (i <= n)
+        {
+            System.out.println(
+        }
+    }
+    
+    public static void divBy2and9F()
+    {
+        for
+    }
+    
+    public static void divBy3and8W()
+    {
+        while
+    }
+    
+    public static void divBy5or7Sum()
+    {
+        while
+    }
+    
+    public static void bizzBuzz()
+    {
+        while
+    }
+        
+    public static void main(String[] args)
+    {
+        oneToThirtyF();
+        oneToThirtyW();
+        twentyToZeroF();
+        twentyToZeroW();
+        sumN();
+        countMtoN();
+        iLoveJava();
+        divBy2and9F();
+        divBy3and8W();
+        divBy5or7Sum();
+        bizzBuzz();
+        // test your methods here
+    }
  }
  
