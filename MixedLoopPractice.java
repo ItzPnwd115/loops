@@ -53,8 +53,8 @@
         for (int i=1; i<=30; i=i+1) 
         {
             System.out.print(i + " ");
-	}
-	System.out.println();
+        }
+        System.out.println();
     }
     
     public static void oneToThirtyW()
@@ -92,44 +92,103 @@
     public static void sumN(int n)
     {
         int sum = 0;
+        int i = 1;
         while( i <= n)
         {
-            System.out.println(sum
+            sum += i;
+            i += 1;            
         }
+        
+        System.out.println(sum + " ");
     }
     
-    public static void countMtoN()
+    public static void countMtoN(int m, int n)
     {
-        while
+        while (m <= n)
+        {
+            System.out.println(m);
+            m += 1;
+        }
     }
     
     public static void iLoveJava(int n)
     {
         int i = 1;
+        
         while (i <= n)
         {
-            System.out.println(
+            System.out.println("I love java.");
+            i++;
         }
+        System.out.println();
     }
     
     public static void divBy2and9F()
     {
-        for
+        for (int i=1; i<=100; i++)
+        {
+            if (i%2==0 && i%9==0)
+            {
+                System.out.println(i + " ");
+            }
+        }
+        System.out.println();
     }
     
     public static void divBy3and8W()
     {
-        while
+        int i = 1;
+        
+        while(i<=100)
+        {
+            if(i%3 == 0 && i%8 == 0)
+            {
+                System.out.print(i +" ");                
+            }
+            i++;
+        }
+        System.out.println();
     }
     
     public static void divBy5or7Sum()
     {
-        while
+        int sum = 0;
+        int i = 1;
+        while(i<=10000)
+        {
+            if(i % 5 == 0 || i % 7 == 0)
+            {
+                sum += i;                
+            }
+            i++;
+        }
+        System.out.print(sum);
+        System.out.println();
     }
     
-    public static void bizzBuzz()
+    public static void bizzBuzz(int n)
     {
-        while
+        int i = 0;
+        while(i<= n)
+        {
+            if (i % 3 == 0 && i % 5 == 0)
+            {
+                System.out.print("bizz buzz" + " ");
+            }
+            else if(i % 3 == 0)
+            {
+                System.out.print("bizz" + " ");
+            }
+            else if(i % 5 == 0)
+            {
+                System.out.print("buzz" + " ");
+            }
+            else
+            {
+                System.out.print(i + " ");
+            }
+            i++;
+        }
     }
         
     public static void main(String[] args)
@@ -138,13 +197,13 @@
         oneToThirtyW();
         twentyToZeroF();
         twentyToZeroW();
-        sumN();
-        countMtoN();
-        iLoveJava();
+        sumN(10);
+        countMtoN(5,20);
+        iLoveJava(5);
         divBy2and9F();
         divBy3and8W();
         divBy5or7Sum();
-        bizzBuzz();
+        bizzBuzz(30);
         // test your methods here
     }
  }
